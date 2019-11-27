@@ -35,9 +35,6 @@ body {
   color: black;
 }
 
-.header-right {
-  float: right;
-}
 
 @media screen and (max-width: 500px) {
   .header a {
@@ -45,15 +42,12 @@ body {
     display: block;
     text-align: left;
   }
-  .header-right {
-    float: none;
-  }
 }
 @media screen and (max-width: 600px) {
-  .header .login-container {
+  .header {
     float: none;
   }
-  .header a, .header input[type=text], .header .login-container button {
+  .header a {
     float: none;
     display: block;
     text-align: left;
@@ -61,14 +55,11 @@ body {
     margin: 0;
     padding: 14px;
   }
-  .header input[type=text] {
-    border: 1px solid #ccc;  
-  }
 }
 
 .navbar {
   overflow: hidden;
-  background-color: rgb(26, 19, 68);
+  background-color: rgb(19, 24, 68);
 }
 
 /* Style the navigation bar links */
@@ -79,11 +70,6 @@ body {
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
 }
 
 /* Change color on hover */
@@ -111,7 +97,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(26, 19, 68);
+  background-color: rgb(19, 24, 68);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -143,7 +129,7 @@ body {
 /* Sidebar/left column */
 .side {
   flex: 30%;
-  background-color: rgb(26, 19, 68);
+  background-color: rgb(19, 24, 68);
   float: left;
   display: block;
   color: white;
@@ -155,6 +141,7 @@ body {
 .main {   
   flex: 70%;
   background-color: white;
+  color: rgb(19, 24, 68);
   padding: 20px;
 }
 
@@ -181,6 +168,6 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background:  rgb(26, 19, 68);
+  background:  rgb(19, 24, 68);
   color: white;
 }
