@@ -2,7 +2,9 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Firemní stránky firmy Cyberone" />
+    <meta name="keywords" content="firma, Cyberone, IT security" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
@@ -60,7 +62,31 @@
         </div>
         <div class="main">
             <h2>Vítáme vás na našich stránkách</h2>
-            <div class="fakeimg" style="height:200px;">Image</div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <a href="blog.html"><img src="pictures/ICT.jpg" style="width:100%"></a>
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <a href="blog.html"><img src="pictures/ICT 2.jpg" style="width:100%"></a>
+                    <div class="text">Caption Two</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <a href="blog.html"><img src="pictures/ICT 3.jpg" style="width:100%"></a>
+                    <div class="text">Caption Three</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
             <p>Some text..</p>
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
